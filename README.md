@@ -1,7 +1,7 @@
 # Lab 3 — User Stories, Models & Seed Data
 
 ## Software description
-
+l
 Throughout this course, you will develop a Hotel Management System step by step, implementing new features in each lab as you learn different aspects of web application development. By the end of the semester, you will have a fully functional application capable of managing hotel operations from room reservations to final billing.
 
 The application will allow hotel staff to:
