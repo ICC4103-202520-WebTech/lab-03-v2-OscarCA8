@@ -15,31 +15,63 @@ ActiveRecord::Schema[8.0].define(version: 2025_09_04_185552) do
   enable_extension "pg_catalog.plpgsql"
 
   create_table "guest_tables", force: :cascade do |t|
+    t.string "first_name", null: false
+    t.string "last_name", null: false
+    t.string "email", null: false
+    t.string "phone", null: false
+    t.string "document_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "invoice_tables", force: :cascade do |t|
+    t.integer "reservation_id", null: false
+    t.integer "nights_subtotal", null: false
+    t.integer "services_subtotal", null: false
+    t.integer "tax", null: false
+    t.integer "total", null: false
+    t.datetime "issued_at", null: false
+    t.string "status", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "reservation_tables", force: :cascade do |t|
+    t.string "code", null: false
+    t.integer "guest_id", null: false
+    t.integer "room_id", null: false
+    t.date "check_in", null: false
+    t.date "check_out", null: false
+    t.integer "status", null: false
+    t.integer "adults", null: false
+    t.integer "children", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "room_tables", force: :cascade do |t|
+    t.string "number", null: false
+    t.integer "room_type", null: false
+    t.integer "price", null: false
+    t.integer "status", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "service_tables", force: :cascade do |t|
+    t.string "name", null: false
+    t.integer "price", null: false
+    t.boolean "is_active", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "service_usage_tables", force: :cascade do |t|
+    t.integer "reservation_id", null: false
+    t.integer "service_id", null: false
+    t.integer "quantity", null: false
+    t.datetime "used_at", null: false
+    t.text "note"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
