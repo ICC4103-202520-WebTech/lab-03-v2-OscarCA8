@@ -1,2 +1,0 @@
-class GuestTable < ApplicationRecord
-end

@@ -1,2 +1,0 @@
-class InvoiceTable < ApplicationRecord
-end

@@ -1,6 +1,6 @@
 class CreateReservationTable < ActiveRecord::Migration[8.0]
   def change
-    create_table :reservation_tables do |t|
+    create_table :reservations do |t|
       t.string :code, null: false
       t.integer :guest_id, null: false
       t.integer :room_id, null: false
@@ -9,7 +9,7 @@ class CreateReservationTable < ActiveRecord::Migration[8.0]
       t.integer :status, null: false
       t.integer :adults, null: false
       t.integer :children, null: false
-      
+
       t.timestamps
     end
   end

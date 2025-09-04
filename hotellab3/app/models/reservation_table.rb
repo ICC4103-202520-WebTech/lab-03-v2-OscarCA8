@@ -1,2 +1,0 @@
-class ReservationTable < ApplicationRecord
-end
