@@ -1,0 +1,2 @@
+class ServiceUsageTable < ApplicationRecord
+end
