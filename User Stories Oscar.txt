@@ -1,0 +1,20 @@
+User Stories
+
+Room management:
+As a hotel manager, I want to categorize hotel rooms by type (Suite, Standard)
+so that guests can compare prices and find the room that best suits their preferences.
+
+Guest Registration:
+As a guest, I want to create an account with username/email and password so that I can provide my information just once, and every time I go to the hotel, the staff will already have my information.
+
+Reservation Creation and Room Assignment:
+As a guest, I would like to receive a confirmation of my reservation so that I can be sure that my reservation was successful and have proof of it.
+
+Service consumption tracking:
+As a hotel staff, I want to record the services a guest uses so that I can add them to their bill and make payment and checkout easier.
+
+Check-In and Check-Out
+As a hotel staff, I want to check in a guest by registering their ID, change room availability, and give them room keys so that the process is complete and they can begin their stay.
+
+Invoice generation
+As a guest, I want to receive a Bill through my email so that I can have a digital copy for my financial records
